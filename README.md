@@ -57,11 +57,9 @@ Persistenza dati: Lettura e scrittura su file CSV.
 Architettura consigliata: MVC (Model-View-Controller)
 
 # Requisiti tecnici
-Schema UML delle classi
-
-Realizzazione delle classi necessarie
-
-Realizzazione di un classe Gestore (punto di collegamento fra l’applicazione grafica e le classi)
+- Schema UML delle classi;
+- Realizzazione delle classi necessarie;
+- Realizzazione di un classe Gestore (punto di collegamento fra l’applicazione grafica e le classi).
 
 # Requisiti obbligatori
 Interfaccia grafica intuitiva:
@@ -73,142 +71,134 @@ Interfaccia grafica intuitiva:
 - Caricamento dati all'avvio dell'applicazione.
 
 # Struttura dei file CSV (esempio)
-corsi.csv
+# corsi.csv
  
 codiceCorso;nomeCorso;durataAnni
 
 
-discipline.csv
+# discipline.csv
 
 codiceDisciplina;nomeDisciplina;cfu;codiceCorso
 
 
-docenti.csv
+# docenti.csv
 
 matricolaDocente;nome;cognome;codiceDisciplina
 
 
-studenti.csv
+# studenti.csv
 
 matricolaStudente;nome;cognome;codiceCorso
 
 
-appelli.csv
+# appelli.csv
 
 idAppello;data;codiceDisciplina
 
 
-iscrizioni_appelli.csv
+# iscrizioni_appelli.csv
 
 idAppello;matricolaStudente
 
 
 
 # Esempi GUI principali
-Maschera "Gestione Studenti" (aggiungi, modifica, elimina studente).
-
-Maschera "Visualizza Corsi" (tabella corsi con pulsante "Aggiungi corso").
-
-Maschera "Gestione Appelli" (seleziona disciplina, crea appello).
-
-Maschera "Iscrizione Studente a Appello".
+- Maschera "Gestione Studenti" (aggiungi, modifica, elimina studente);
+- Maschera "Visualizza Corsi" (tabella corsi con pulsante "Aggiungi corso");
+- Maschera "Gestione Appelli" (seleziona disciplina, crea appello);
+- Maschera "Iscrizione Studente a Appello".
 
 
 
 # Vincoli
 
-Non puoi eliminare un Corso se ci sono studenti, docenti o esami collegati
-
-Non puoi eliminare un Appello se ci sono studenti iscritti
-
-Non puoi eliminare uno Studente se è iscritto a qualche appello
-
-Non puoi eliminare un Docente se ci sono materie collegate
+- Non puoi eliminare un Corso se ci sono studenti, docenti o esami collegati;
+- Non puoi eliminare un Appello se ci sono studenti iscritti;
+- Non puoi eliminare uno Studente se è iscritto a qualche appello;
+- Non puoi eliminare un Docente se ci sono materie collegate
 
 # Extra facoltativi (per chi vuole approfondire)
 
-Aggiunta di voti d’esame e verbalizzazione.
-
-Filtri di ricerca nelle tabelle (es. cerca per nome o codice).
-
-Esportazione di report (es. elenco studenti iscritti a un appello).
-
+- Aggiunta di voti d’esame e verbalizzazione;
+- Filtri di ricerca nelle tabelle (es. cerca per nome o codice);
+- Esportazione di report (es. elenco studenti iscritti a un appello).
 
 # Esempi CSV
-corsi.csv
+
+# corsi.csv
 
 codiceCorso;nomeCorso;durataAnni
 
-C001;Ingegneria Informatica;5
+- C001;Ingegneria Informatica;5
 
-C002;Lettere;3
+- C002;Lettere;3
 
 
-discipline.csv
+# discipline.csv
 
 codiceDisciplina;nomeDisciplina;cfu;codiceCorso
 
-D001;Informatica;9;C001
+- D001;Informatica;9;C001
 
-D002;Elettronica;6;C001
+- D002;Elettronica;6;C001
 
-D003;Letteratura Italiana;9;C002
+- D003;Letteratura Italiana;9;C002
 
-D004;Storia Moderna;3;C002
+- D004;Storia Moderna;3;C002
 
 
-docenti.csv
+# docenti.csv
 
 matricolaDocente;nome;cognome;codiceDisciplina
 
-P01;Alan;Turing;D001
+- P01;Alan;Turing;D001
 
-P02;Steve;Jobs;D002
+- P02;Steve;Jobs;D002
 
-P03;Luigi;Pirandello;D003
+- P03;Luigi;Pirandello;D003
 
-P04;Alessandro;Barbero;D004
+- P04;Alessandro;Barbero;D004
 
 
-studenti.csv
+# studenti.csv
 
 matricolaStudente;nome;cognome;codiceCorso
 
-S001;Franco;Rosso;C001
+- S001;Franco;Rosso;C001
 
-S002;Antonio;Conte;C001
+- S002;Antonio;Conte;C001
 
-S003;Luisa;Pollini;C001
+- S003;Luisa;Pollini;C001
 
-S004;Marina;Tremonti;C002
+- S004;Marina;Tremonti;C002
 
-S005;Zoe;Grassi;C002
+- S005;Zoe;Grassi;C002
 
 
 
-appelli.csv
+# appelli.csv
 
 idAppello;data;codiceDisciplina
 
-A01;2025-06-01;D001
+- A01;2025-06-01;D001
 
-A02;2025-06-03;D002
+- A02;2025-06-03;D002
 
-A03;2025-07-03;D001
+- A03;2025-07-03;D001
 
-A04;2025-07-05;D003
+- A04;2025-07-05;D003
 
 
 
-iscrizioni_appelli.csv
+# iscrizioni_appelli.csv
 
 idAppello;matricolaStudente
 
-A01;S001
+- A01;S001
 
-A01;S002
+- A01;S002
 
-A03;S001
+- A03;S001
 
-A04;S004
+- A04;S004
 
