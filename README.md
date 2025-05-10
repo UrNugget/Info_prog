@@ -49,8 +49,11 @@ Gli studenti possono iscriversi agli appelli solo delle discipline del proprio c
 
 # Specifiche tecniche
 Linguaggio: Java
+
 IDE: NetBeans (uso di Swing per la GUI)
+
 Persistenza dati: Lettura e scrittura su file CSV.
+
 Architettura consigliata: MVC (Model-View-Controller)
 
 # Requisiti tecnici
