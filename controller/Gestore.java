@@ -345,6 +345,8 @@ public class Gestore {
         String s = "";
         for (Appello a : appelli) {
             s += a.stampaAppello();
+            
+            System.out.println(a.stampaIscrizioni());
         }
         return s;
     }
@@ -393,8 +395,10 @@ public class Gestore {
 
                 if (s.getCorsoObj()!=null && a.getDisciplina()!=null) {
                     if (s.getCorsoObj().controllo(a.getDisciplina().getCodice())) {
+                        System.out.println("Iscrizione completata!");
                         a.iscrizione(s);
                     }
+                    else System.out.println("Iscrizione fallita...");
                 }
                 //String codiceDisciplinaIscrizione 
 
