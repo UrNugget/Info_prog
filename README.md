@@ -66,7 +66,6 @@ Interfaccia grafica intuitiva:
 - Menù principale con sezioni per Corsi, Discipline, Docenti, Studenti, Appelli;
 - Finestra per l'inserimento/modifica dei dati;
 - Tabelle per visualizzare gli elenchi;
-- (F) Validazione dei dati (es. non permettere a uno studente di iscriversi a un esame di un'altra facoltà);
 - Salvataggio tramite pulsante "Salva" delle modifiche nei file CSV;
 - Caricamento dati all'avvio dell'applicazione.
 
@@ -116,12 +115,6 @@ idAppello;matricolaStudente
 - Non puoi eliminare un Appello se ci sono studenti iscritti;
 - Non puoi eliminare uno Studente se è iscritto a qualche appello;
 - Non puoi eliminare un Docente se ci sono materie collegate
-
-# Extra facoltativi (per chi vuole approfondire)
-
-- Aggiunta di voti d’esame e verbalizzazione;
-- Filtri di ricerca nelle tabelle (es. cerca per nome o codice);
-- Esportazione di report (es. elenco studenti iscritti a un appello).
 
 # Esempi CSV
 
